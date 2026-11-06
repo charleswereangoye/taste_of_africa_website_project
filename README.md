@@ -105,20 +105,6 @@ To view and run the project locally on your machine:
 
 ---
 
-## Rubric Compliance Summary
-
-| Rubric Criterion | Max Pts | Status | Key Evidence |
-| :--- | :---: | :---: | :--- |
-| **Completeness** | 6 | **Exceeded** | 5 complete pages, hero banner, interactive form, embedded YouTube videos, Google Maps, and newsletter. |
-| **HTML Structure** | 8 | **Exceeded** | Semantic HTML5 tags (`<figure>`, `<figcaption>`, `<article>`, `<mark>`, `<details>`, `<summary>`, `<datalist>`, `<table>`). |
-| **CSS & Styling** | 4 | **Exceeded** | Curated African spice palette, Google Fonts, custom card styling, focus indicators, and dark mode. |
-| **Responsiveness & Functionality** | 4 | **Exceeded** | Fluid multi-column layouts, mobile hamburger drawer, responsive iframes, no broken links. |
-| **Code Quality & Creativity** | 4 | **Exceeded** | Clean student-friendly code, zero console errors, zero emojis, authentic micro-interactions. |
-| **DOM Manipulation & Interactivity** | 4 | **Exceeded** | Recipe filter by region, localStorage favorites, localStorage theme toggle, form validation with dynamic feedback. |
-| **Total** | **30 / 30** | **100%** | Full score across all rubric requirements. |
-
----
-
 ## Technologies Used
 
 - **HTML5:** Semantic document structuring and accessible media embedding.
