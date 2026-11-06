@@ -1101,21 +1101,235 @@ mark {
   margin-top: 0.3rem;
 }
 
+/* About page styles */
+.about-hero {
+  background-color: var(--brown-hero);
+  color: #ffffff;
+  border-radius: var(--radius-lg);
+  padding: 4.5rem 3.5rem;
+  margin: 1.5rem 0 3.5rem;
+  box-shadow: var(--shadow-md);
+}
+
+.about-hero .eyebrow {
+  color: var(--ochre-gold);
+}
+
+.about-hero h1 {
+  font-family: var(--font-serif);
+  color: #ffffff;
+  font-size: 3.4rem;
+  font-weight: 700;
+  line-height: 1.15;
+  margin: 0.8rem 0 1.2rem;
+  max-width: 850px;
+}
+
+.about-hero p {
+  color: rgba(255, 255, 255, 0.85);
+  font-size: 1.15rem;
+  max-width: 650px;
+  margin-bottom: 2rem;
+  line-height: 1.6;
+}
+
+.about-story-section {
+  padding: 2rem 0 4rem;
+}
+
+.about-story-grid {
+  display: grid;
+  grid-template-columns: 1.15fr 1fr;
+  gap: 3.5rem;
+  align-items: center;
+}
+
+.about-story-text h2 {
+  font-family: var(--font-serif);
+  font-size: 2.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.about-story-text p {
+  font-size: 1.05rem;
+  line-height: 1.7;
+  margin-bottom: 1.2rem;
+}
+
+.quote-box {
+  background-color: var(--bg-peach);
+  border-left: 4px solid var(--ochre-gold);
+  border-radius: 0 var(--radius-md) var(--radius-md) 0;
+  padding: 1.5rem 1.8rem;
+  margin-top: 2rem;
+}
+
+.quote-box p {
+  font-family: var(--font-heading);
+  font-size: 1.35rem;
+  font-weight: 600;
+  color: var(--brown-hero);
+  margin-bottom: 0;
+  line-height: 1.4;
+}
+
+.about-image-card {
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  box-shadow: var(--shadow-md);
+}
+
+.about-image-card img {
+  width: 100%;
+  height: 480px;
+  object-fit: cover;
+}
+
+.photo-caption {
+  font-size: 0.88rem;
+  font-style: italic;
+  color: var(--text-muted);
+  margin-top: 0.8rem;
+}
+
+/* Landmark map section */
+.landmark-section {
+  padding: 2rem 0 4.5rem;
+}
+
+.landmark-section h2 {
+  font-family: var(--font-serif);
+  font-size: 2.4rem;
+  margin-bottom: 1.8rem;
+}
+
+.landmark-map-container {
+  position: relative;
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  height: 440px;
+  box-shadow: var(--shadow-md);
+  border: 1px solid var(--border-soft);
+}
+
+.landmark-map-container iframe {
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+
+.landmark-info-card {
+  position: absolute;
+  bottom: 2rem;
+  left: 2rem;
+  background: rgba(255, 255, 255, 0.94);
+  backdrop-filter: blur(8px);
+  padding: 1.4rem 1.8rem;
+  border-radius: var(--radius-md);
+  box-shadow: var(--shadow-md);
+  max-width: 340px;
+  z-index: 10;
+  border: 1px solid rgba(255, 255, 255, 0.6);
+}
+
+body.dark-mode .landmark-info-card {
+  background: rgba(36, 28, 24, 0.94);
+  border-color: var(--border-soft);
+}
+
+.landmark-badge-title {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  margin-bottom: 0.3rem;
+}
+
+.landmark-pin-icon {
+  width: 32px;
+  height: 32px;
+  background-color: var(--ochre-gold);
+  color: #ffffff;
+  border-radius: 50%;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.9rem;
+  font-weight: bold;
+}
+
+.landmark-info-card h3 {
+  font-size: 1.15rem;
+}
+
+.landmark-info-card .location-sub {
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--text-muted);
+  margin-bottom: 0.5rem;
+}
+
+.landmark-info-card p {
+  font-size: 0.9rem;
+  line-height: 1.45;
+}
+
+/* About bottom quick links bar */
+.about-bottom-bar {
+  border-top: 1px solid var(--border-soft);
+  padding: 2.2rem 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.about-bottom-bar h3 {
+  font-family: var(--font-serif);
+  font-size: 1.6rem;
+}
+
+.about-bottom-links {
+  display: flex;
+  gap: 2rem;
+}
+
+.about-bottom-links a {
+  font-weight: 700;
+  color: var(--text-dark);
+  font-size: 0.95rem;
+}
+
+.about-bottom-links a:hover {
+  color: var(--ochre-gold);
+  text-decoration: underline;
+}
+
 /* Responsive screen rules */
 @media (max-width: 900px) {
   .hero-grid,
   .culture-grid,
   .recipes-layout,
   .recipe-map-card,
-  .region-card {
+  .region-card,
+  .about-story-grid {
     grid-template-columns: 1fr;
+  }
+
+  .about-hero {
+    padding: 3rem 2rem;
+  }
+
+  .about-hero h1 {
+    font-size: 2.4rem;
   }
 
   .region-card.reverse .region-media-wrap {
     order: -1;
   }
 
-  .pantry-callout-banner {
+  .pantry-callout-banner,
+  .about-bottom-bar {
     flex-direction: column;
     text-align: center;
   }

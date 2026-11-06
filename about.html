@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Us | Taste of Africa</title>
+  <meta name="description" content="Discover the mission of Taste of Africa to preserve and celebrate African culinary heritage, traditions, and global influence.">
+  
+  <!-- Main stylesheet -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- Site Header and Navigation -->
+  <header class="site-header">
+    <div class="container">
+      <a href="index.html" class="brand-logo">Taste of Africa</a>
+      
+      <nav class="main-nav" aria-label="Main Navigation">
+        <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="recipes.html">Recipes</a></li>
+          <li><a href="regions.html">Culinary Regions</a></li>
+          <li><a href="about.html" class="active">About Us</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+
+      <!-- Theme Switcher and Call to Action -->
+      <div class="header-actions">
+        <button id="theme-toggle" class="theme-toggle-btn" aria-label="Toggle dark mode">Dark Mode</button>
+        <a href="recipes.html" class="btn-cta">Explore Recipes</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  <main class="container">
+
+    <!-- About Us Hero Banner -->
+    <section class="about-hero">
+      <span class="eyebrow">Our Table</span>
+      <h1>Recipes are records of where we&rsquo;ve been.</h1>
+      <p>
+        Taste of Africa preserves and celebrates the living archive of African food &mdash; 
+        one recipe, one memory, and one generous table at a time.
+      </p>
+      <div>
+        <a href="#our-history" class="btn-primary">Meet the mission &rarr;</a>
+      </div>
+    </section>
+
+    <!-- Cultural Food History Section -->
+    <section id="our-history" class="about-story-section">
+      <div class="about-story-grid">
+        
+        <!-- Story Text Column -->
+        <div class="about-story-text">
+          <h2>A history you can taste</h2>
+          <p>
+            African food traditions are shaped by centuries of trade, migration, climate, ceremony, 
+            and the family kitchens where culinary knowledge passes quietly from one generation to the next.
+          </p>
+          <p>
+            Across the continent, ingredients travel and transform. A familiar spice, grain, or cooking method can 
+            carry the imprint of many places, making every dish part of a wider, living conversation between continents.
+          </p>
+          <p>
+            We gather these recipes with care &mdash; honoring the people, places, and memories behind them while 
+            making room for new stories to find their rightful way to the table.
+          </p>
+
+          <!-- Quote Callout Box -->
+          <div class="quote-box">
+            <p>&ldquo;The recipe changes. The welcome remains.&rdquo;</p>
+          </div>
+        </div>
+
+        <!-- Atmospheric Photo Column -->
+        <div>
+          <figure class="about-image-card">
+            <img src="https://images.unsplash.com/photo-1590779033100-9f60a05a013d?w=800&auto=format&fit=crop" 
+                 alt="Traditional African kitchen with open hearth cooking fire">
+          </figure>
+          <figcaption class="photo-caption">Cooking is a form of remembering.</figcaption>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Cultural Food Landmark Map Section -->
+    <section class="landmark-section">
+      <h2>Visit a place that holds the story</h2>
+      
+      <div class="landmark-map-container">
+        <!-- Embedded Google Map of Makola Market, Accra, Ghana -->
+        <iframe 
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3970.978519656157!2d-0.207865!3d5.548981!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xfdf909062de3c45%3A0xc39216cfd218beec!2sMakola%20Market!5e0!3m2!1sen!2s!4v1680000000000" 
+          title="Map showing Makola Market in Accra Ghana"
+          allowfullscreen="" 
+          loading="lazy" 
+          referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+
+        <!-- Info Card Floating Over the Map -->
+        <div class="landmark-info-card">
+          <div class="landmark-badge-title">
+            <span class="landmark-pin-icon">&#9678;</span>
+            <div>
+              <h3>Makola Market</h3>
+              <div class="location-sub">Accra, Ghana</div>
+            </div>
+          </div>
+          <p>A vibrant crossroads of fresh produce, heirloom spices, voices, and everyday culinary brilliance.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Bottom Action Bar -->
+    <div class="about-bottom-bar">
+      <h3>Bring a little more Africa to your table.</h3>
+      <div class="about-bottom-links">
+        <a href="regions.html">Read the journal &#8599;</a>
+        <a href="recipes.html">Browse recipes &#8599;</a>
+      </div>
+    </div>
+
+  </main>
+
+  <!-- Site Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-top">
+        
+        <div class="footer-newsletter">
+          <h3>Stay connected with African flavors</h3>
+          <p>Subscribe to receive seasonal recipes, ingredient guides, and regional culinary stories.</p>
+          <form id="newsletter-form" class="newsletter-form">
+            <label for="newsletter-email" class="sr-only" style="display:none;">Email address</label>
+            <input type="email" id="newsletter-email" placeholder="Your email address" required>
+            <button type="submit" class="btn-primary">Join</button>
+          </form>
+          <div id="newsletter-feedback" class="newsletter-msg"></div>
+        </div>
+
+        <div class="footer-links">
+          <h4>Explore</h4>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="recipes.html">All Recipes</a></li>
+            <li><a href="regions.html">Culinary Regions</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-links">
+          <h4>About</h4>
+          <ul>
+            <li><a href="about.html">Our Mission</a></li>
+            <li><a href="contact.html">Get in Touch</a></li>
+          </ul>
+        </div>
+
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2026 Taste of Africa. Celebrating African culinary heritage.</p>
+        <p>Built with semantic HTML5, CSS3 &amp; JavaScript</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Main script -->
+  <script src="script.js"></script>
+</body>
+</html>
