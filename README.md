@@ -112,3 +112,4 @@ To view and run the project locally on your machine:
 - **JavaScript (ES6):** DOM selection, event listeners, array manipulation, and Web Storage API (`localStorage`).
 - **Google Fonts:** Playfair Display and Plus Jakarta Sans.
 - **Embedded Media:** Google Maps Embed API and YouTube Embed API.
+- **Flowstep-ai** design inspiration (https://app.flowstep.ai/file?activeFileId=58c64815-f69f-487b-9e3c-638de5d6c230) 
