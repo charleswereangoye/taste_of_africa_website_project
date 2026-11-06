@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Recipes | Taste of Africa</title>
+  <meta name="description" content="Explore authentic African recipes with detailed cooking instructions, ingredient lists, and origins.">
+  
+  <!-- Main stylesheet -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- Site Header and Navigation -->
+  <header class="site-header">
+    <div class="container">
+      <a href="index.html" class="brand-logo">Taste of Africa</a>
+      
+      <nav class="main-nav" aria-label="Main Navigation">
+        <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="recipes.html" class="active">Recipes</a></li>
+          <li><a href="regions.html">Culinary Regions</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+
+      <!-- Theme Switcher and Call to Action -->
+      <div class="header-actions">
+        <button id="theme-toggle" class="theme-toggle-btn" aria-label="Toggle dark mode">Dark Mode</button>
+        <a href="recipes.html" class="btn-cta">Explore Recipes</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  <main class="container">
+
+    <!-- Recipe Page Header -->
+    <section class="recipe-page-header">
+      <span class="eyebrow">The Recipe Box</span>
+      <h1>Cook something with a story.</h1>
+      <p>Browse dishes by region, technique, and the memories they carry.</p>
+      
+      <!-- Interactive Region Filter Buttons -->
+      <div class="filter-bar">
+        <button class="filter-btn active" data-region="all">All</button>
+        <button class="filter-btn" data-region="west-africa">West Africa</button>
+        <button class="filter-btn" data-region="east-africa">East Africa</button>
+        <button class="filter-btn" data-region="north-africa">North Africa</button>
+      </div>
+    </section>
+
+    <!-- Two-column Recipes Layout -->
+    <div class="recipes-layout">
+
+      <!-- Left Column: Featured Main Recipe Showcase -->
+      <article class="recipe-main-card recipe-filter-item" data-region="west-africa">
+        
+        <div class="recipe-main-img-wrap">
+          <img src="https://images.unsplash.com/photo-1512058564366-18510be2db19?w=900&auto=format&fit=crop" 
+               alt="Smoky Jollof Rice served in a white baking dish with roasted peppers">
+        </div>
+
+        <div class="recipe-main-body">
+          
+          <div class="recipe-meta-row">
+            <span class="tag-pill">West Africa</span>
+            <span>Serves 6 &middot; 55 min &middot; Medium</span>
+          </div>
+
+          <div class="recipe-title-bar">
+            <h2>Smoky Jollof Rice</h2>
+            <!-- Heart favorite button -->
+            <button class="favorite-btn" data-recipe-id="smoky-jollof" aria-label="Save Smoky Jollof to favorites" title="Save to favorites">
+              <svg viewBox="0 0 24 24">
+                <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"></path>
+              </svg>
+            </button>
+          </div>
+
+          <p class="recipe-desc">
+            A party-sized pot with deep tomato flavor and the unmistakable char of a well-loved kitchen. 
+            Popular across West Africa, especially in Ghana, Nigeria, and Senegal.
+          </p>
+
+          <hr class="recipe-divider">
+
+          <!-- Ingredients List -->
+          <h3>Ingredients</h3>
+          <ul class="ingredients-grid">
+            <li>Long-grain rice</li>
+            <li>Plum tomatoes</li>
+            <li>Red bell pepper</li>
+            <li>Onion</li>
+            <li>Garlic &amp; ginger</li>
+            <li>Thyme</li>
+            <li>Stock</li>
+            <li>Scotch bonnet</li>
+          </ul>
+
+          <hr class="recipe-divider">
+
+          <!-- Expandable Cooking Instructions with details and summary -->
+          <h3>Cooking Instructions</h3>
+          
+          <details class="instruction-step" open>
+            <summary>01 &middot; Build the base</summary>
+            <p>
+              Blend plum tomatoes, bell peppers, onions, ginger, and garlic into a smooth puree. 
+              Pour into hot vegetable oil and fry slowly until the sauce thickens and oil separates from the stew.
+            </p>
+          </details>
+
+          <details class="instruction-step">
+            <summary>02 &middot; Toast the rice</summary>
+            <p>
+              Wash long-grain rice thoroughly. Add the grains directly to the rich tomato sauce, stirring continuously 
+              to toast the grains and coat them thoroughly before adding heated stock.
+            </p>
+          </details>
+
+          <details class="instruction-step">
+            <summary>03 &middot; Steam and rest</summary>
+            <p>
+              Cover tightly with foil and a heavy lid on low heat. Allow steam to cook the rice evenly until tender, 
+              achieving that sought-after smoky aroma. Turn off the heat and let rest for 10 minutes before fluffing.
+            </p>
+          </details>
+
+          <!-- Embedded YouTube Video for Technique -->
+          <div class="recipe-video-card">
+            <h3>Watch the technique</h3>
+            <p>See how the smoky finish and steaming process come together.</p>
+            <div class="video-responsive-wrapper">
+              <iframe 
+                src="https://www.youtube.com/embed/9bZkp7q19f0" 
+                title="Smoky Jollof Cooking Technique" 
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                allowfullscreen>
+              </iframe>
+            </div>
+          </div>
+
+          <!-- Nutritional Facts Table -->
+          <div class="nutrition-section">
+            <h3>Nutritional Facts (Per Serving)</h3>
+            <table class="nutrition-table">
+              <thead>
+                <tr>
+                  <th>Nutrient</th>
+                  <th>Amount</th>
+                  <th>Daily Value</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Calories</td>
+                  <td>385 kcal</td>
+                  <td>19%</td>
+                </tr>
+                <tr>
+                  <td>Carbohydrates</td>
+                  <td>68g</td>
+                  <td>25%</td>
+                </tr>
+                <tr>
+                  <td>Protein</td>
+                  <td>8g</td>
+                  <td>16%</td>
+                </tr>
+                <tr>
+                  <td>Fat</td>
+                  <td>9g</td>
+                  <td>12%</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+        </div>
+      </article>
+
+      <!-- Right Column: Sidebar Recipe Cards -->
+      <aside class="recipe-sidebar" aria-label="Other African Recipes">
+        
+        <!-- Recipe Card: Injera & Tibs -->
+        <article class="recipe-side-card recipe-filter-item" data-region="east-africa">
+          <img src="https://images.unsplash.com/photo-1565557623262-b51c2513a641?w=300&auto=format&fit=crop" 
+               alt="Ethiopian Injera flatbread platter" 
+               class="recipe-side-thumb">
+          <div class="recipe-side-info">
+            <h3>Injera &amp; Tibs</h3>
+            <p class="text-muted">East Africa &middot; 45 min</p>
+          </div>
+          <button class="favorite-btn" data-recipe-id="injera-tibs" aria-label="Save Injera & Tibs to favorites" title="Save to favorites">
+            <svg viewBox="0 0 24 24">
+              <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"></path>
+            </svg>
+          </button>
+        </article>
+
+        <!-- Recipe Card: Golden Tagine -->
+        <article class="recipe-side-card recipe-filter-item" data-region="north-africa">
+          <img src="https://images.unsplash.com/photo-1541518763669-27fef04b14ea?w=300&auto=format&fit=crop" 
+               alt="Moroccan Golden Tagine in earthenware dish" 
+               class="recipe-side-thumb">
+          <div class="recipe-side-info">
+            <h3>Golden Tagine</h3>
+            <p class="text-muted">North Africa &middot; 1 hr 20 min</p>
+          </div>
+          <button class="favorite-btn" data-recipe-id="golden-tagine" aria-label="Save Golden Tagine to favorites" title="Save to favorites">
+            <svg viewBox="0 0 24 24">
+              <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"></path>
+            </svg>
+          </button>
+        </article>
+
+        <!-- Recipe Card: Suya Skewers -->
+        <article class="recipe-side-card recipe-filter-item" data-region="west-africa">
+          <img src="https://images.unsplash.com/photo-1529692236671-f1f6cf9683ba?w=300&auto=format&fit=crop" 
+               alt="Grilled spiced Nigerian Suya meat skewers" 
+               class="recipe-side-thumb">
+          <div class="recipe-side-info">
+            <h3>Suya Skewers</h3>
+            <p class="text-muted">West Africa &middot; 35 min</p>
+          </div>
+          <button class="favorite-btn" data-recipe-id="suya-skewers" aria-label="Save Suya Skewers to favorites" title="Save to favorites">
+            <svg viewBox="0 0 24 24">
+              <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"></path>
+            </svg>
+          </button>
+        </article>
+
+      </aside>
+
+    </div>
+
+    <!-- Country of Origin Map Section -->
+    <section class="recipe-map-card">
+      <div class="recipe-map-text">
+        <span class="eyebrow">Follow the Flavors</span>
+        <h2>Trace the origins of our signature dishes.</h2>
+        <p>
+          Trace the geographic routes where ancient grains, coastal trade spices, and culinary techniques converged across the African continent.
+        </p>
+      </div>
+      
+      <div class="recipe-map-embed">
+        <!-- Google Map showing West African culinary heartland -->
+        <iframe 
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d16300234.45344336!2d-5.0!3d9.0!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xfd75acda87d25e1%3A0xb36a0d24c3ea4e18!2sWest%20Africa!5e0!3m2!1sen!2s!4v1680000000000" 
+          title="Map showing origins of West African dishes"
+          allowfullscreen="" 
+          loading="lazy" 
+          referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Site Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-top">
+        
+        <div class="footer-newsletter">
+          <h3>Stay connected with African flavors</h3>
+          <p>Subscribe to receive seasonal recipes, ingredient guides, and regional culinary stories.</p>
+          <form id="newsletter-form" class="newsletter-form">
+            <label for="newsletter-email" class="sr-only" style="display:none;">Email address</label>
+            <input type="email" id="newsletter-email" placeholder="Your email address" required>
+            <button type="submit" class="btn-primary">Join</button>
+          </form>
+          <div id="newsletter-feedback" class="newsletter-msg"></div>
+        </div>
+
+        <div class="footer-links">
+          <h4>Explore</h4>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="recipes.html">All Recipes</a></li>
+            <li><a href="regions.html">Culinary Regions</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-links">
+          <h4>About</h4>
+          <ul>
+            <li><a href="about.html">Our Mission</a></li>
+            <li><a href="contact.html">Get in Touch</a></li>
+          </ul>
+        </div>
+
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2026 Taste of Africa. Celebrating African culinary heritage.</p>
+        <p>Built with semantic HTML5, CSS3 &amp; JavaScript</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Main script -->
+  <script src="script.js"></script>
+</body>
+</html>
