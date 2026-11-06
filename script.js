@@ -4,6 +4,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
   // Dark and light mode toggle
   const themeToggleBtn = document.getElementById('theme-toggle');
+  const mobileThemeBtn = document.getElementById('mobile-theme-toggle');
   
   // Check if dark mode was saved in localStorage
   const savedTheme = localStorage.getItem('site-theme');
@@ -14,18 +15,68 @@ document.addEventListener('DOMContentLoaded', function () {
     }
   }
 
-  if (themeToggleBtn) {
-    themeToggleBtn.addEventListener('click', function () {
-      document.body.classList.toggle('dark-mode');
-      
-      // Save user preference
-      if (document.body.classList.contains('dark-mode')) {
-        localStorage.setItem('site-theme', 'dark');
+  function handleThemeToggle() {
+    document.body.classList.toggle('dark-mode');
+    
+    // Save user preference
+    if (document.body.classList.contains('dark-mode')) {
+      localStorage.setItem('site-theme', 'dark');
+      if (themeToggleBtn) {
         themeToggleBtn.textContent = 'Light Mode';
-      } else {
-        localStorage.setItem('site-theme', 'light');
+      }
+    } else {
+      localStorage.setItem('site-theme', 'light');
+      if (themeToggleBtn) {
         themeToggleBtn.textContent = 'Dark Mode';
       }
+    }
+  }
+
+  if (themeToggleBtn) {
+    themeToggleBtn.addEventListener('click', handleThemeToggle);
+  }
+
+  if (mobileThemeBtn) {
+    mobileThemeBtn.addEventListener('click', handleThemeToggle);
+  }
+
+  // Mobile hamburger menu toggle
+  const menuToggleBtn = document.getElementById('menu-toggle');
+  const mainNav = document.getElementById('main-nav');
+
+  if (menuToggleBtn && mainNav) {
+    menuToggleBtn.addEventListener('click', function () {
+      const isOpen = mainNav.classList.toggle('is-open');
+      menuToggleBtn.classList.toggle('is-active', isOpen);
+      menuToggleBtn.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
+    });
+
+    // Close menu when clicking outside
+    document.addEventListener('click', function (event) {
+      if (!mainNav.contains(event.target) && !menuToggleBtn.contains(event.target) && mainNav.classList.contains('is-open')) {
+        mainNav.classList.remove('is-open');
+        menuToggleBtn.classList.remove('is-active');
+        menuToggleBtn.setAttribute('aria-expanded', 'false');
+      }
+    });
+
+    // Close menu when pressing Escape
+    document.addEventListener('keydown', function (event) {
+      if (event.key === 'Escape' && mainNav.classList.contains('is-open')) {
+        mainNav.classList.remove('is-open');
+        menuToggleBtn.classList.remove('is-active');
+        menuToggleBtn.setAttribute('aria-expanded', 'false');
+      }
+    });
+
+    // Close menu when clicking a link inside it
+    const navLinks = mainNav.querySelectorAll('a');
+    navLinks.forEach(function (link) {
+      link.addEventListener('click', function () {
+        mainNav.classList.remove('is-open');
+        menuToggleBtn.classList.remove('is-active');
+        menuToggleBtn.setAttribute('aria-expanded', 'false');
+      });
     });
   }
 

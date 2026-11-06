@@ -16,21 +16,30 @@
     <div class="container">
       <a href="index.html" class="brand-logo">Taste of Africa</a>
       
-      <nav class="main-nav" aria-label="Main Navigation">
+      <nav class="main-nav" id="main-nav" aria-label="Main Navigation">
         <ul class="nav-links">
           <li><a href="index.html">Home</a></li>
           <li><a href="recipes.html" class="active">Recipes</a></li>
           <li><a href="regions.html">Culinary Regions</a></li>
           <li><a href="about.html">About Us</a></li>
           <li><a href="contact.html">Contact</a></li>
+          <li class="mobile-only"><button type="button" id="mobile-theme-toggle" class="mobile-theme-btn">Theme</button></li>
+          <li class="mobile-only"><a href="recipes.html">Explore Recipes</a></li>
         </ul>
       </nav>
 
-      <!-- Theme Switcher and Call to Action -->
+      <!-- Theme Switcher and Call to Action (Desktop) -->
       <div class="header-actions">
         <button id="theme-toggle" class="theme-toggle-btn" aria-label="Toggle dark mode">Dark Mode</button>
         <a href="recipes.html" class="btn-cta">Explore Recipes</a>
       </div>
+
+      <!-- Mobile Hamburger Toggle -->
+      <button type="button" class="menu-toggle" id="menu-toggle" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="main-nav">
+        <span class="hamburger-bar"></span>
+        <span class="hamburger-bar"></span>
+        <span class="hamburger-bar"></span>
+      </button>
     </div>
   </header>
 
