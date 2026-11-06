@@ -101,7 +101,7 @@ To view and run the project locally on your machine:
 
 2. **Open the website:**
    - Open `index.html` directly in any modern web browser (Chrome, Firefox, Safari, Edge).
-   - Alternatively, use the **Live Server** extension in VS Code / Antigravity IDE for auto-reloading during development.
+   - Alternatively, use the **Live Server** extension in VS Code IDE for auto-reloading during development.
 
 ---
 
