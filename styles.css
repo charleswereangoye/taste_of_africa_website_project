@@ -972,10 +972,133 @@ mark {
   overflow: hidden;
 }
 
-.recipe-map-embed iframe {
+/* Culinary regions page styles */
+.regions-page-header {
+  text-align: center;
+  padding: 3rem 0 2.5rem;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.regions-page-header h1 {
+  font-size: 3rem;
+  margin: 0.6rem 0 0.8rem;
+}
+
+.regions-list {
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
+  margin-bottom: 3rem;
+}
+
+.region-card {
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-soft);
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  box-shadow: var(--shadow-sm);
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: stretch;
+}
+
+.region-content {
+  padding: 3rem 2.8rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.region-content h2 {
+  font-size: 2.2rem;
+  margin: 0.4rem 0 0.2rem;
+}
+
+.region-countries {
+  font-size: 0.95rem;
+  color: var(--text-muted);
+  font-weight: 600;
+  margin-bottom: 1.2rem;
+}
+
+.region-desc {
+  font-size: 1.05rem;
+  line-height: 1.65;
+  margin-bottom: 1.5rem;
+}
+
+.region-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.6rem;
+  margin-bottom: 1.5rem;
+}
+
+.region-links {
+  margin-top: 0.5rem;
+}
+
+.region-media-wrap {
+  position: relative;
+  min-height: 360px;
+  overflow: hidden;
+}
+
+.region-media-wrap img {
   width: 100%;
   height: 100%;
-  border: 0;
+  object-fit: cover;
+}
+
+.region-video-pill {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: rgba(255, 255, 255, 0.94);
+  backdrop-filter: blur(8px);
+  color: var(--text-dark);
+  font-size: 0.95rem;
+  font-weight: 700;
+  padding: 0.75rem 1.6rem;
+  border-radius: var(--radius-pill);
+  box-shadow: var(--shadow-md);
+  display: inline-flex;
+  align-items: center;
+  gap: 0.6rem;
+  border: none;
+  cursor: pointer;
+  transition: var(--transition);
+}
+
+.region-video-pill:hover {
+  background: #ffffff;
+  transform: translate(-50%, -50%) scale(1.04);
+}
+
+/* Pantry callout banner */
+.pantry-callout-banner {
+  background: linear-gradient(135deg, #c77b31, #b56820);
+  color: #ffffff;
+  border-radius: var(--radius-lg);
+  padding: 3rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2rem;
+  margin: 3.5rem 0 4.5rem;
+  box-shadow: var(--shadow-md);
+}
+
+.pantry-callout-banner .eyebrow {
+  color: #ffecd1;
+}
+
+.pantry-callout-banner h2 {
+  color: #ffffff;
+  font-size: 2.2rem;
+  margin-top: 0.3rem;
 }
 
 /* Responsive screen rules */
@@ -983,8 +1106,18 @@ mark {
   .hero-grid,
   .culture-grid,
   .recipes-layout,
-  .recipe-map-card {
+  .recipe-map-card,
+  .region-card {
     grid-template-columns: 1fr;
+  }
+
+  .region-card.reverse .region-media-wrap {
+    order: -1;
+  }
+
+  .pantry-callout-banner {
+    flex-direction: column;
+    text-align: center;
   }
 
   .dishes-grid,
