@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us | Taste of Africa</title>
+  <meta name="description" content="Get in touch with Taste of Africa. Share family recipes, regional food memories, or culinary inquiries.">
+  
+  <!-- Main stylesheet -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- Site Header and Navigation -->
+  <header class="site-header">
+    <div class="container">
+      <a href="index.html" class="brand-logo">Taste of Africa</a>
+      
+      <nav class="main-nav" aria-label="Main Navigation">
+        <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="recipes.html">Recipes</a></li>
+          <li><a href="regions.html">Culinary Regions</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="contact.html" class="active">Contact</a></li>
+        </ul>
+      </nav>
+
+      <!-- Theme Switcher and Call to Action -->
+      <div class="header-actions">
+        <button id="theme-toggle" class="theme-toggle-btn" aria-label="Toggle dark mode">Dark Mode</button>
+        <a href="recipes.html" class="btn-cta">Explore Recipes</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  <main class="container">
+
+    <!-- Contact Header -->
+    <section class="contact-header">
+      <span class="eyebrow">Come Say Hello</span>
+      <h1>Bring your story to the table.</h1>
+      <p>Have a family recipe, a regional food memory, or a question about what we do? We'd love to hear from you.</p>
+    </section>
+
+    <!-- Two-column Contact Layout -->
+    <div class="contact-grid">
+
+      <!-- Left Column: Interactive Contact Form -->
+      <section class="contact-form-card" aria-label="Contact form section">
+        
+        <!-- Validation error box handled by JavaScript -->
+        <div id="form-error-message" class="form-error"></div>
+
+        <!-- Submission confirmation box -->
+        <div id="form-success-message" class="form-success-box"></div>
+
+        <form id="contact-form">
+          
+          <!-- Name Field -->
+          <div class="form-group">
+            <label for="user-name">Name</label>
+            <input type="text" id="user-name" name="name" class="form-control" placeholder="Your full name" required>
+          </div>
+
+          <!-- Email Field -->
+          <div class="form-group">
+            <label for="user-email">Email</label>
+            <input type="email" id="user-email" name="email" class="form-control" placeholder="you@example.com" required>
+          </div>
+
+          <!-- Country Field with Datalist Suggestions -->
+          <div class="form-group">
+            <label for="user-country">Country</label>
+            <input list="african-countries" id="user-country" name="country" class="form-control" placeholder="Choose or type a country" required>
+            
+            <datalist id="african-countries">
+              <option value="Ghana">
+              <option value="Nigeria">
+              <option value="Ethiopia">
+              <option value="Morocco">
+              <option value="Kenya">
+              <option value="Senegal">
+              <option value="South Africa">
+              <option value="Tanzania">
+              <option value="Egypt">
+              <option value="Rwanda">
+            </datalist>
+          </div>
+
+          <!-- Message Field -->
+          <div class="form-group">
+            <label for="user-message">Message</label>
+            <textarea id="user-message" name="message" class="form-control" rows="5" placeholder="Tell us what's on your mind (minimum 20 characters)..." required></textarea>
+          </div>
+
+          <!-- Submit Button -->
+          <button type="submit" class="btn-terracotta" style="width: 100%; justify-content: center;">
+            Submit
+          </button>
+
+          <p class="form-note">We usually reply within 3&ndash;5 working days.</p>
+        </form>
+
+      </section>
+
+      <!-- Right Column: Community & Contact Info Card -->
+      <aside class="contact-info-card" aria-label="Community contact information">
+        <h2>Find us around the table</h2>
+        <p>Taste of Africa is a growing community of cooks, historians, and curious eaters across the globe.</p>
+
+        <!-- Contact details -->
+        <div class="contact-details-list">
+          
+          <div class="contact-item">
+            <svg class="contact-icon" viewBox="0 0 24 24" stroke-width="2">
+              <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+              <polyline points="22,6 12,13 2,6"></polyline>
+            </svg>
+            <span>hello@tasteofafrica.example</span>
+          </div>
+
+          <div class="contact-item">
+            <svg class="contact-icon" viewBox="0 0 24 24" stroke-width="2">
+              <circle cx="12" cy="12" r="4"></circle>
+              <path d="M16 8v5a3 3 0 0 0 6 0v-1a10 10 0 1 0-3.92 7.94"></path>
+            </svg>
+            <span>@tasteofafrica</span>
+          </div>
+
+          <div class="contact-item">
+            <svg class="contact-icon" viewBox="0 0 24 24" stroke-width="2">
+              <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+              <circle cx="12" cy="10" r="3"></circle>
+            </svg>
+            <span>Accra &middot; Addis &middot; Casablanca</span>
+          </div>
+
+        </div>
+
+        <!-- Video card -->
+        <div class="contact-video-card">
+          <div class="video-responsive-wrapper" style="margin-bottom: 0.5rem;">
+            <iframe 
+              src="https://www.youtube.com/embed/9bZkp7q19f0" 
+              title="Our story in 90 seconds" 
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+              allowfullscreen>
+            </iframe>
+          </div>
+          <span style="font-size: 0.88rem; font-weight: 600;">Our story in 90 seconds</span>
+        </div>
+
+      </aside>
+
+    </div>
+
+    <!-- Bottom Community Quote -->
+    <div class="contact-quote-footer">
+      <p>By sharing your story, you help keep the archive alive.</p>
+    </div>
+
+  </main>
+
+  <!-- Site Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-top">
+        
+        <div class="footer-newsletter">
+          <h3>Stay connected with African flavors</h3>
+          <p>Subscribe to receive seasonal recipes, ingredient guides, and regional culinary stories.</p>
+          <form id="newsletter-form" class="newsletter-form">
+            <label for="newsletter-email" class="sr-only" style="display:none;">Email address</label>
+            <input type="email" id="newsletter-email" placeholder="Your email address" required>
+            <button type="submit" class="btn-primary">Join</button>
+          </form>
+          <div id="newsletter-feedback" class="newsletter-msg"></div>
+        </div>
+
+        <div class="footer-links">
+          <h4>Explore</h4>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="recipes.html">All Recipes</a></li>
+            <li><a href="regions.html">Culinary Regions</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-links">
+          <h4>About</h4>
+          <ul>
+            <li><a href="about.html">Our Mission</a></li>
+            <li><a href="contact.html">Get in Touch</a></li>
+          </ul>
+        </div>
+
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2026 Taste of Africa. Celebrating African culinary heritage.</p>
+        <p>Built with semantic HTML5, CSS3 &amp; JavaScript</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Main script -->
+  <script src="script.js"></script>
+</body>
+</html>
