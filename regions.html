@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Culinary Regions | Taste of Africa</title>
+  <meta name="description" content="Explore Africa's vibrant culinary regions, from West African spice stews to North African tagines and East African injera platters.">
+  
+  <!-- Main stylesheet -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- Site Header and Navigation -->
+  <header class="site-header">
+    <div class="container">
+      <a href="index.html" class="brand-logo">Taste of Africa</a>
+      
+      <nav class="main-nav" aria-label="Main Navigation">
+        <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="recipes.html">Recipes</a></li>
+          <li><a href="regions.html" class="active">Culinary Regions</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+
+      <!-- Theme Switcher and Call to Action -->
+      <div class="header-actions">
+        <button id="theme-toggle" class="theme-toggle-btn" aria-label="Toggle dark mode">Dark Mode</button>
+        <a href="recipes.html" class="btn-cta">Explore Recipes</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  <main class="container">
+
+    <!-- Page Introduction Header -->
+    <section class="regions-page-header">
+      <span class="eyebrow">A Continent of Tables</span>
+      <h1>Three regions. Infinite ways to gather.</h1>
+      <p>Every landscape brings its own grain, spice, ritual, and rhythm to the plate.</p>
+    </section>
+
+    <!-- Culinary Regions List -->
+    <div class="regions-list">
+
+      <!-- Region 1: West Africa -->
+      <article class="region-card">
+        <div class="region-content">
+          <span class="tag-pill">West Africa</span>
+          <h2>West Africa</h2>
+          <p class="region-countries">Ghana &middot; Nigeria &middot; Senegal</p>
+          <p class="region-desc">
+            From coastal stews to celebratory rice pots, West African cooking leans into 
+            <mark>bold aromatics</mark>, open flame <mark>smoke</mark>, and the generous instinct to feed a crowd. 
+            Dishes are built upon tomato-pepper stew bases seasoned with fermented locust beans and ginger.
+          </p>
+          
+          <div class="region-tags">
+            <span class="tag-pill">Jollof rice</span>
+            <span class="tag-pill">Yams</span>
+            <span class="tag-pill">Groundnuts</span>
+            <span class="tag-pill">Plantain</span>
+          </div>
+
+          <div class="region-links">
+            <a href="recipes.html" class="dish-link">View West African recipes &rarr;</a>
+          </div>
+        </div>
+
+        <div class="region-media-wrap">
+          <img src="https://images.unsplash.com/photo-1555939594-58d7cb561ad1?w=800&auto=format&fit=crop" 
+               alt="West African festive dinner table spread">
+          <button class="region-video-pill" onclick="document.getElementById('regions-video-modal').scrollIntoView({behavior: 'smooth'})">
+            &#9654; Kitchen notes &middot; West Africa
+          </button>
+        </div>
+      </article>
+
+      <!-- Region 2: East Africa (Reversed layout) -->
+      <article class="region-card reverse">
+        <div class="region-media-wrap">
+          <img src="https://images.unsplash.com/photo-1565557623262-b51c2513a641?w=800&auto=format&fit=crop" 
+               alt="Ethiopian injera bread feast platter with colorful stews">
+          <button class="region-video-pill" onclick="document.getElementById('regions-video-modal').scrollIntoView({behavior: 'smooth'})">
+            &#9654; Kitchen notes &middot; East Africa
+          </button>
+        </div>
+
+        <div class="region-content">
+          <span class="tag-pill">East Africa</span>
+          <h2>East Africa</h2>
+          <p class="region-countries">Ethiopia &middot; Kenya &middot; Tanzania</p>
+          <p class="region-desc">
+            <mark>Sourdough injera</mark>, fragrant roasted coffee, and <mark>long-simmered sauces</mark> turn the meal into a communal ritual of touch, time, and conversation. 
+            Meals are served upon single large trays intended for hands-on sharing.
+          </p>
+
+          <div class="region-tags">
+            <span class="tag-pill">Teff</span>
+            <span class="tag-pill">Coffee</span>
+            <span class="tag-pill">Lentils</span>
+            <span class="tag-pill">Berbere</span>
+          </div>
+
+          <div class="region-links">
+            <a href="recipes.html" class="dish-link">View East African recipes &rarr;</a>
+          </div>
+        </div>
+      </article>
+
+      <!-- Region 3: North Africa -->
+      <article class="region-card">
+        <div class="region-content">
+          <span class="tag-pill">North Africa</span>
+          <h2>North Africa</h2>
+          <p class="region-countries">Morocco &middot; Tunisia &middot; Egypt</p>
+          <p class="region-desc">
+            Citrus, sun-dried fruit, fresh herbs, and complex spice blends move through North African kitchens with patience. 
+            Earthenware tagine pots steam meats and vegetables together with <mark>preserved lemon</mark> and warm <mark>ras el hanout</mark>.
+          </p>
+
+          <div class="region-tags">
+            <span class="tag-pill">Couscous</span>
+            <span class="tag-pill">Preserved lemon</span>
+            <span class="tag-pill">Chickpeas</span>
+            <span class="tag-pill">Mint</span>
+          </div>
+
+          <div class="region-links">
+            <a href="recipes.html" class="dish-link">View North African recipes &rarr;</a>
+          </div>
+        </div>
+
+        <div class="region-media-wrap">
+          <img src="https://images.unsplash.com/photo-1541518763669-27fef04b14ea?w=800&auto=format&fit=crop" 
+               alt="North African tagine cooked slowly with spices and olives">
+          <button class="region-video-pill" onclick="document.getElementById('regions-video-modal').scrollIntoView({behavior: 'smooth'})">
+            &#9654; Kitchen notes &middot; North Africa
+          </button>
+        </div>
+      </article>
+
+    </div>
+
+    <!-- Embedded Video Section for Region Documentary -->
+    <section id="regions-video-modal" class="recipe-map-card" style="margin-top: 2rem;">
+      <div class="recipe-map-text">
+        <span class="eyebrow">Culinary Field Notes</span>
+        <h2>Tradition passed from hand to hand.</h2>
+        <p>
+          Watch how home cooks and market chefs preserve culinary heritage through oral traditions, 
+          ancient grains, and centuries-old spice blends.
+        </p>
+      </div>
+      <div class="video-responsive-wrapper" style="margin: 0;">
+        <iframe 
+          src="https://www.youtube.com/embed/9bZkp7q19f0" 
+          title="African Regional Food Traditions Video" 
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+          allowfullscreen>
+        </iframe>
+      </div>
+    </section>
+
+    <!-- Bottom Pantry Callout Banner -->
+    <section class="pantry-callout-banner">
+      <div>
+        <span class="eyebrow">Start with One Ingredient</span>
+        <h2>A pantry can be a passport.</h2>
+      </div>
+      <a href="recipes.html" class="btn-terracotta">Explore recipes</a>
+    </section>
+
+  </main>
+
+  <!-- Site Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-top">
+        
+        <div class="footer-newsletter">
+          <h3>Stay connected with African flavors</h3>
+          <p>Subscribe to receive seasonal recipes, ingredient guides, and regional culinary stories.</p>
+          <form id="newsletter-form" class="newsletter-form">
+            <label for="newsletter-email" class="sr-only" style="display:none;">Email address</label>
+            <input type="email" id="newsletter-email" placeholder="Your email address" required>
+            <button type="submit" class="btn-primary">Join</button>
+          </form>
+          <div id="newsletter-feedback" class="newsletter-msg"></div>
+        </div>
+
+        <div class="footer-links">
+          <h4>Explore</h4>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="recipes.html">All Recipes</a></li>
+            <li><a href="regions.html">Culinary Regions</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-links">
+          <h4>About</h4>
+          <ul>
+            <li><a href="about.html">Our Mission</a></li>
+            <li><a href="contact.html">Get in Touch</a></li>
+          </ul>
+        </div>
+
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2026 Taste of Africa. Celebrating African culinary heritage.</p>
+        <p>Built with semantic HTML5, CSS3 &amp; JavaScript</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Main script -->
+  <script src="script.js"></script>
+</body>
+</html>
